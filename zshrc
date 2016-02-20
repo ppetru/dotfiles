@@ -1,65 +1,17 @@
-#
-# zshrc.zsh - Example starter zshrc
-#
-# Sets up oh-my-zsh, some completions, fixes ^H and backspace, and more.
-#
-# Author
-#   Jake Zimmerman <jake@zimmerman.io>
-#
-# Usage
-#   Move this file to `~/.zshrc`
-#
-# Notes
-#   This is an example _starter_ zshrc. What I mean by this is that it's more
-#   of a skeleton zshrc. It's been crafted with the assumption that you're
-#   coming from bash and you already have some bash config that you're weary to
-#   part with. The content here aims to be minimally invasive, and since zsh is
-#   largely compatible with bash, the rest of your config should fit right in.
-#
-#   By default, though, it depends on two external plugins (so it's not as
-#   minimal as it could be). These are oh-my-zsh[1] and
-#   zsh-syntax-highlighting[2].
-#
-#   To install oh-my-zsh, just run
-#
-#     git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
-#
-#   After installing oh-my-zsh, to install zsh-syntax-highlighting run
-#
-#     git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-#
-#   There are other options to install these extras which you can find by
-#   reading their READMEs[1][2]. Depending on the route you end up taking, you
-#   might have to adjust some of the settings in the file below.
-#
-#   [1]: https://github.com/robbyrussell/oh-my-zsh
-#   [2]: https://github.com/zsh-users/zsh-syntax-highlighting
-#
-# License
-#   MIT License (c) 2016 Jake Zimmerman
-
-
-# --- Oh My Zsh specific ------------------------------------------------------
-#
-# I'm not using oh-my-zsh for too much. Mostly, it makes adding completion
-# plugins and prompts easier, but it could be removed if you don't want that
-# many completion plugins.
-#
-# It messes around with and adds things like aliases and other things, so it's
-# not for everyone, but it generally works just fine.
+#   https://github.com/robbyrussell/oh-my-zsh
+#   https://github.com/zsh-users/zsh-syntax-highlighting
 
 # Configure zsh-syntax-highlighting (it's an oh-my-zsh plugin)
 # (Uses the defaults plus 'brackets', which tell if parens, etc. are unmatched)
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(main brackets)
 
 # Disable Oh My Zsh's annoying auto updates
-DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # I prefer not to have autocompletion be case-insensitive, which is the default
 export CASE_SENSITIVE="true"
 
-# One of the many oh-my-zsh themes shipped by default
-ZSH_THEME=avit
+#ZSH_THEME=avit
 
 export ZSH="$HOME/.oh-my-zsh/"
 plugins=(brew brew-cask zsh-syntax-highlighting)
@@ -69,9 +21,6 @@ source $ZSH/oh-my-zsh.sh
 # Change zsh-syntax-highlighting comment color once the defaults have been set
 # (Gray in Solarized color palette)
 ZSH_HIGHLIGHT_STYLES[comment]='fg=green,bold'
-
-# -----------------------------------------------------------------------------
-
 
 # General zshzle options
 setopt autocd                     # cd by just typing in a directory name
@@ -99,30 +48,30 @@ bindkey "^H" backward-delete-char
 
 
 # Turn on vi keybindings <3 <3 <3 :D and other things
-bindkey -v
-bindkey "^?" backward-delete-char
-bindkey "^W" backward-kill-word
-bindkey "^U" backward-kill-line
+#bindkey -v
+#bindkey "^?" backward-delete-char
+#bindkey "^W" backward-kill-word
+#bindkey "^U" backward-kill-line
 
 # Sometimes pressing ESC + / quickly (i.e., to do a reverse-i-search with
 # bindkey -v turned on) would not work properly. This fixes it.
-vi-search-fix() {
-  zle vi-cmd-mode
-  zle .vi-history-search-backward
-}
-autoload vi-search-fix
-zle -N vi-search-fix
-bindkey -M viins '\e/' vi-search-fix
+#vi-search-fix() {
+#  zle vi-cmd-mode
+#  zle .vi-history-search-backward
+#}
+#autoload vi-search-fix
+#zle -N vi-search-fix
+#bindkey -M viins '\e/' vi-search-fix
 
 # history search backwords with j/k in vi normal mode
-bindkey -M vicmd 'k' history-beginning-search-backward
-bindkey -M vicmd 'j' history-beginning-search-forward
+#bindkey -M vicmd 'k' history-beginning-search-backward
+#bindkey -M vicmd 'j' history-beginning-search-forward
 
 
 # Initialize zsh history files
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=1000000
+SAVEHIST=1000000
 
 
 zstyle :compinstall filename $HOME/.zshrc
