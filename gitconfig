@@ -1,0 +1,16 @@
+[color]
+	ui = auto
+
+[push]
+	default = tracking
+
+[diff]
+	renames = copies
+	mnemonicprefix = true
+
+[user]
+	name = Petru Paler
+	email = petru@paler.net
+
+[pager]
+	diff = LESS=RS less -c

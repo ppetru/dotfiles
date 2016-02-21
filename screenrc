@@ -1,0 +1,22 @@
+escape ^Tt
+
+# UTF-8 everywhere
+defutf8 on
+
+# disable Ctrl-S/Ctrl-Q "flow control"
+defflow off
+
+# skip intro
+startup_message off
+
+# detach on disconnect
+autodetach on
+
+# use regular audible bell
+vbell off
+
+# make the shell in every window a login shell
+shell -$SHELL
+
+# restore window contents after using (e.g.) vi
+altscreen on
