@@ -41,7 +41,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+--beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+beautiful.init( awful.util.getdir("config") .. "/themes/awesome-solarized/dark/theme.lua" )
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
@@ -82,11 +83,27 @@ end
 -- }}}
 
 -- {{{ Tags
--- Define a tag table which hold all screen tags.
+config = { }
+config.tags = {
+  {
+     { name = "two", layout = awful.layout.suit.tile, mwfact = 0.55 },
+     { name = "three", layout = awful.layout.suit.tile, ncol = 2, mwfact = 0.35 },
+  }
+}
 tags = {}
 for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+   tags[s] = {}
+   for i, v in ipairs(config.tags[s]) do
+       tags[s][i] = awful.tag.add(v.name)
+       tags[s][i].screen = s
+       awful.tag.setproperty(tags[s][i], "layout", v.layout)
+       awful.tag.setproperty(tags[s][i], "mwfact", v.mwfact)
+       awful.tag.setproperty(tags[s][i], "nmaster", v.nmaster)
+       awful.tag.setproperty(tags[s][i], "nother", v.nmaster)
+       awful.tag.setproperty(tags[s][i], "ncol", v.ncol)
+       awful.tag.setproperty(tags[s][i], "icon", v.icon)
+   end
+   tags[s][1].selected = true
 end
 -- }}}
 
