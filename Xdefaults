@@ -76,3 +76,5 @@ URxvt*urgentOnBell: true
 
 Xautolock.time: 5
 Xautolock.locker: /usr/bin/xscreensaver-command -lock
+
+xscreensaver.newLoginCommand: dm-tool switch-to-greeter
