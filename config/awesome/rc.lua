@@ -495,7 +495,7 @@ end
 
 run_once("xrdb ~/.Xdefaults")
 run_once("xmodmap ~/.Xmodmap")
-run_once("xscreensaver", "-nosplash")
+run_once("sleep 1 && xscreensaver -nosplash")
 run_once("xautolock")
 run_once("autocutsel", "-f")
 run_once("redshift", "-l 47.365307:8.525709")
