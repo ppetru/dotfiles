@@ -21,6 +21,12 @@ au BufNewFile,BufRead *.vimrc,*.c,*.cc,*.h,*.java,*.py,*.rules match TooLong /\%
 hi link TooLong Warning
 hi Warning ctermbg=Grey ctermfg=DarkRed
 
+let g:jsx_ext_required = 0
+
 call plug#begin('~/.vim/plugged')
+
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
 call plug#end()
 
