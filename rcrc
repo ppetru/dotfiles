@@ -1,2 +1,2 @@
-SYMLINK_DIRS="zprezto awesome"
+SYMLINK_DIRS="zprezto awesome vim"
 EXCLUDES="*themes*"

@@ -20,3 +20,7 @@ set visualbell
 au BufNewFile,BufRead *.vimrc,*.c,*.cc,*.h,*.java,*.py,*.rules match TooLong /\%<82v.\%>81v/
 hi link TooLong Warning
 hi Warning ctermbg=Grey ctermfg=DarkRed
+
+call plug#begin('~/.vim/plugged')
+call plug#end()
+
