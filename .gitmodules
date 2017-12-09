@@ -10,3 +10,6 @@
 [submodule "vim/plugged/vim-jsx"]
 	path = vim/plugged/vim-jsx
 	url = git://github.com/mxw/vim-jsx.git
+[submodule "vim/plugged/ale"]
+	path = vim/plugged/ale
+	url = https://github.com/w0rp/ale.git
