@@ -13,3 +13,6 @@
 [submodule "vim/plugged/ale"]
 	path = vim/plugged/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "vim/plugged/vim-colors-solarized"]
+	path = vim/plugged/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
