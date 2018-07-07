@@ -16,3 +16,12 @@
 [submodule "vim/plugged/vim-colors-solarized"]
 	path = vim/plugged/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "vim/plugged/vim-codefmt"]
+	path = vim/plugged/vim-codefmt
+	url = https://github.com/google/vim-codefmt
+[submodule "vim/plugged/vim-glaive"]
+	path = vim/plugged/vim-glaive
+	url = https://github.com/google/vim-glaive
+[submodule "vim/plugged/vim-maktaba"]
+	path = vim/plugged/vim-maktaba
+	url = https://github.com/google/vim-maktaba
