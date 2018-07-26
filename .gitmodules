@@ -1,9 +1,6 @@
 [submodule "zprezto"]
 	path = zprezto
 	url = https://github.com/ppetru/prezto.git
-[submodule "config/awesome/themes/awesome-solarized"]
-	path = config/awesome/themes/awesome-solarized
-	url = git://github.com/cycojesus/awesome-solarized.git
 [submodule "vim/plugged/vim-javascript"]
 	path = tag-personal/vim/plugged/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
