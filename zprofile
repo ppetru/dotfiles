@@ -46,6 +46,8 @@ path=(
   ~/bin
   /usr/local/{bin,sbin}
   /usr/local/go/bin
+  ~/.yarn/bin
+  ~/.config/yarn/global/node_modules/.bin
   $path
 )
 
