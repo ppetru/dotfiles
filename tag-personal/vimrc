@@ -26,6 +26,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
+Plug 'nathangrigg/vim-beancount'
 
 call plug#end()
 

@@ -22,3 +22,6 @@
 [submodule "vim/plugged/vim-maktaba"]
 	path = tag-personal/vim/plugged/vim-maktaba
 	url = https://github.com/google/vim-maktaba
+[submodule "tag-personal/vim/plugged/vim-beancount"]
+	path = tag-personal/vim/plugged/vim-beancount
+	url = https://github.com/nathangrigg/vim-beancount.git
