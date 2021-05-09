@@ -2,26 +2,26 @@
 	path = zprezto
 	url = https://github.com/ppetru/prezto.git
 [submodule "vim/plugged/vim-javascript"]
-	path = tag-personal/vim/plugged/vim-javascript
+	path = vim/plugged/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule "vim/plugged/vim-jsx"]
-	path = tag-personal/vim/plugged/vim-jsx
+	path = vim/plugged/vim-jsx
 	url = git://github.com/mxw/vim-jsx.git
 [submodule "vim/plugged/ale"]
-	path = tag-personal/vim/plugged/ale
+	path = vim/plugged/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "vim/plugged/vim-colors-solarized"]
-	path = tag-personal/vim/plugged/vim-colors-solarized
+	path = vim/plugged/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
 [submodule "vim/plugged/vim-codefmt"]
-	path = tag-personal/vim/plugged/vim-codefmt
+	path = vim/plugged/vim-codefmt
 	url = https://github.com/google/vim-codefmt
 [submodule "vim/plugged/vim-glaive"]
-	path = tag-personal/vim/plugged/vim-glaive
+	path = vim/plugged/vim-glaive
 	url = https://github.com/google/vim-glaive
 [submodule "vim/plugged/vim-maktaba"]
-	path = tag-personal/vim/plugged/vim-maktaba
+	path = vim/plugged/vim-maktaba
 	url = https://github.com/google/vim-maktaba
 [submodule "tag-personal/vim/plugged/vim-beancount"]
-	path = tag-personal/vim/plugged/vim-beancount
+	path = vim/plugged/vim-beancount
 	url = https://github.com/nathangrigg/vim-beancount.git
