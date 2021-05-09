@@ -1,3 +1,2 @@
 SYMLINK_DIRS="zprezto awesome vim"
 EXCLUDES="*themes*"
-TAGS="personal"
