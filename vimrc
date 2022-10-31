@@ -53,8 +53,4 @@ augroup autoformat_settings
 augroup END
 
 set autoindent
-set shiftwidth=2 expandtab softtabstop=2 tabstop=2
-
-" set back 2 space tabs after ftplugin sets them to 4
-autocmd FileType python set shiftwidth=2 expandtab softtabstop=2 tabstop=2
-
+set shiftwidth=4 expandtab softtabstop=4 tabstop=4
