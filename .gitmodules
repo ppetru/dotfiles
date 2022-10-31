@@ -3,10 +3,10 @@
 	url = https://github.com/ppetru/prezto.git
 [submodule "vim/plugged/vim-javascript"]
 	path = vim/plugged/vim-javascript
-	url = git://github.com/pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule "vim/plugged/vim-jsx"]
 	path = vim/plugged/vim-jsx
-	url = git://github.com/mxw/vim-jsx.git
+	url = https://github.com/mxw/vim-jsx.git
 [submodule "vim/plugged/ale"]
 	path = vim/plugged/ale
 	url = https://github.com/w0rp/ale.git
