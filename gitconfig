@@ -16,3 +16,5 @@
 	diff = LESS=RS less -c
 [credential]
 	helper = cache
+[pull]
+	rebase = false
