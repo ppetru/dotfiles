@@ -37,6 +37,8 @@ let g:ale_sign_column_always = 1
 
 set background=dark
 colorscheme solarized
+" workaround for mosh color issue
+set termguicolors
 
 call glaive#Install()
 Glaive codefmt plugin[mappings]
