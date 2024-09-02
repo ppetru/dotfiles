@@ -10,6 +10,7 @@ fi
 
 HISTSIZE=1000000
 SAVEHIST=1000000
+export MOSH_SERVER_NETWORK_TMOUT=604800
 
 eval `dircolors ~/.dircolors`
 
